@@ -1,0 +1,114 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.46.0",
+  "hash": "fd3e1e6e6ea1fd2b0aea",
+  "publicPath": "/static/",
+  "outputPath": "C:\\xampp\\htdocs\\frontity-test\\wermedia\\build\\static",
+  "assetsByChunkName": {
+    "wermedia": [
+      "wermedia.module.js",
+      "wermedia.47c8b68493250c05a6b0.hot-update.js"
+    ]
+  },
+  "assets": [
+    {
+      "name": "47c8b68493250c05a6b0.hot-update.json",
+      "size": 50,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "wermedia.47c8b68493250c05a6b0.hot-update.js",
+      "size": 24829,
+      "chunks": [
+        "wermedia"
+      ],
+      "chunkNames": [
+        "wermedia"
+      ],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "wermedia.module.js",
+      "size": 6285028,
+      "chunks": [
+        "wermedia"
+      ],
+      "chunkNames": [
+        "wermedia"
+      ],
+      "info": {},
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "wermedia": {
+      "chunks": [
+        "wermedia"
+      ],
+      "assets": [
+        "wermedia.module.js",
+        "wermedia.47c8b68493250c05a6b0.hot-update.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "wermedia": {
+      "chunks": [
+        "wermedia"
+      ],
+      "assets": [
+        "wermedia.module.js",
+        "wermedia.47c8b68493250c05a6b0.hot-update.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": "wermedia",
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 1564541,
+      "names": [
+        "wermedia"
+      ],
+      "files": [
+        "wermedia.module.js",
+        "wermedia.47c8b68493250c05a6b0.hot-update.js"
+      ],
+      "hash": "e0cff520f60b17904a4e",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    }
+  ],
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 2,
+      "debug": false
+    }
+  },
+  "children": [],
+  "generator": "loadable-components"
+}
