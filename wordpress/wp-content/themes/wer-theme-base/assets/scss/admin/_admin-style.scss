@@ -1,0 +1,178 @@
+@import "../variables";
+
+@mixin clear {
+  *zoom: 1;
+
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+html.wp-toolbar {
+  background: #fff;
+  background: none;
+  padding-top: 0;
+}
+
+/* *********************** */
+/* Main Wraps */
+/* *********************** */
+#wpwrap {
+  background: #fff;
+  background: none;
+}
+#wpcontent {
+  margin-left: 200px;
+  padding-left: 60px;
+}
+@media screen and (max-width: 782px) {
+  #wpcontent,
+  .auto-fold #wpcontent {
+    padding-left: 20px;
+  }
+}
+// Some Jetpack specific fixes
+.jetpack-pagestyles #wpcontent {
+  margin-left: 200px;
+}
+.jetpack-pagestyles .modal {
+  margin-left: 200px;
+  top: 81px;
+}
+#wpbody {
+  padding-top: 61px;
+
+  .folded & {
+    padding-top: 36px;
+  }
+
+  @media screen and (max-width: 960px) {
+    padding-top: 36px;
+  }
+  @media screen and (max-width: 782px) {
+    padding-top: 46px;
+
+    .wp-responsive-open & {
+      right: -210px;
+    }
+  }
+}
+.wrap {
+  margin: 40px 60px 0 0;
+}
+@media screen and (max-width: 782px) {
+  .wrap {
+    margin: 20px 20px 0 0;
+  }
+}
+.edit-tags-php .wrap {
+  @include clear;
+  margin: 40px 0 0 0;
+}
+.post-php .wrap,
+.post-new-php .wrap,
+.comment-php .wrap {
+  margin: 0;
+}
+@media only screen and (max-width: 850px) {
+  .post-php .wrap,
+  .post-new-php .wrap,
+  .comment-php .wrap {
+    margin: 0 60px 0 0;
+  }
+}
+@media screen and (max-width: 782px) {
+  .post-php .wrap,
+  .post-new-php .wrap,
+  .comment-php .wrap {
+    margin: 0 20px 0 0;
+  }
+}
+
+/* *********************** */
+/* Main Content */
+/* *********************** */
+#poststuff {
+  padding-top: 0;
+}
+#post-body-content {
+  margin-bottom: 60px;
+}
+#post-body-content > h2,
+#post-body-content > h1 {
+  border-bottom: 1px solid #eeecec;
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 40px 0 0 0;
+  padding: 0 0 4px 0;
+}
+.comment-php #post-body-content > h2 {
+  border: 0 none;
+  color: #222;
+  font-size: 23px;
+  line-height: 29px;
+  padding: 9px 15px 4px 0;
+}
+.wrap h2 {
+  border-bottom: 1px solid #eeecec;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+
+  &.nav-tab-wrapper {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+.wrap .add-new-h2,
+.wrap .add-new-h2:active {
+  background: #eaeaea;
+  padding: 2px 6px;
+  top: -1px;
+}
+#titlediv #title-prompt-text {
+  color: #999;
+  font-size: 3.5em;
+  line-height: 1;
+  padding: 12px 0;
+}
+#titlediv #title,
+#edit-slug-box {
+  border: 0 none;
+  box-shadow: none;
+  padding: 0;
+}
+#titlediv #title {
+  font-size: 3.5em;
+}
+#titlediv #title:focus {
+  background: #eaeaea;
+  padding: 0 10px;
+}
+
+input[type=checkbox]:focus,
+input[type=color]:focus,
+input[type=date]:focus,
+input[type=datetime-local]:focus,
+input[type=datetime]:focus,
+input[type=email]:focus,
+input[type=month]:focus,
+input[type=number]:focus,
+input[type=password]:focus,
+input[type=radio]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=text]:focus,
+input[type=time]:focus,
+input[type=url]:focus,
+input[type=week]:focus,
+select:focus,
+textarea:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}

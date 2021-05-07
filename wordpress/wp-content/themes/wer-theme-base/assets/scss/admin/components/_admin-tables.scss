@@ -1,0 +1,84 @@
+@import "../../variables";
+
+.wp-list-table{
+  border-collapse: separate !important;
+  border-spacing:0 0 !important;
+  background: transparent !important;
+
+  a{
+    color: black;
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+
+  [type="checkbox"]{
+    display: none;
+  }
+
+  .post-state:last-child{
+    display: none !important;
+  }
+
+  span.edit{
+    display: none !important;
+  }
+
+  thead, tfoot{
+    background:$--wer-main-color;
+    color: white;
+
+    th{
+      color: white !important;
+      padding:5px;
+
+      .vers:before{
+        color: white !important;
+      }
+
+      a{
+        color: inherit !important;
+      }
+    }
+  }
+
+  tbody{
+    tr{
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24) !important;
+      border-radius: 5px;
+      margin: 10px;
+      background: white !important;
+    }
+  }
+}
+
+.tablenav {
+  margin: 8px 0 12px 0;
+}
+.tablenav .actions {
+  padding: 0 8px 0 0;
+}
+.wp-list-table,
+table.comments {
+  border-color: transparent !important;
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+  border: 0 none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.widefat tfoot td, .widefat tfoot th{
+  border-top: none !important;
+}
+
+
+.wp-list-table thead th,
+.wp-list-table tfoot th,
+table.comments thead th,
+table.comments tfoot th {
+  font-size: 14px;
+  font-weight: 600;
+}
+.row-title {
+  font-size: 16px !important;
+  font-weight: 400;
+}

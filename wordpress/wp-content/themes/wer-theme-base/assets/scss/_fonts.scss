@@ -1,0 +1,40 @@
+// format('woff2') = .woff2
+// format('woff') = .woff
+// format('truetype') = .ttf
+// format('opentype') = .otf
+
+@font-face {
+  font-family: 'Helvetica Neue Ultra Light';
+  src: url("../fonts/Nimbus-Sans-D-OT-Ultra-Light_32757.ttf")
+    format('truetype');
+}
+@font-face {
+  font-family: 'Helvetica Neue Thin';
+  src: url("../fonts/Pragmatica-ExtraLight.woff")
+  format('woff');
+}
+@font-face {
+  font-family: 'Helvetica Neue Light';
+  src: url("../fonts/Nimbus-Sans-D-OT-Light_32752.ttf")
+  format('truetype');
+}
+@font-face {
+  font-family: 'Helvetica Neue Roman';
+  src: url("../fonts/Free-Sans/FreeSans.ttf")
+  format('truetype');
+}
+@font-face {
+  font-family: 'Helvetica Neue Medium';
+  src: url("../fonts/PragmaticaMedium.otf")
+  format('opentype');
+}
+@font-face {
+  font-family: 'Helvetica Neue Bold';
+  src: url("../fonts/Free-Sans/FreeSansBold.ttf")
+  format('truetype');
+}
+@font-face {
+  font-family: 'Helvetica Neue Heavy';
+  src: url("../fonts/Warownia/WarowniaUlt.otf")
+  format('opentype');
+}

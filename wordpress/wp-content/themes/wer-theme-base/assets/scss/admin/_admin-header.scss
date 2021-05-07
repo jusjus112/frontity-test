@@ -1,0 +1,468 @@
+@import "../variables";
+/* *********************** */
+/* Admin Menu */
+/* *********************** */
+
+
+#adminmenuback {
+  background-color: $--wer-main-color;
+  //background-image: -moz-linear-gradient(right, rgba(0,0,0,.075) 0%, rgba(0,0,0,0) 5%, rgba(0,0,0,0) 100%);
+  //background-image: -o-linear-gradient(right, rgba(0,0,0,.075) 0%, rgba(0,0,0,0) 5%, rgba(0,0,0,0) 100%);
+  //background-image: -webkit-linear-gradient(right, rgba(0,0,0,.075) 0%, rgba(0,0,0,0) 5%, rgba(0,0,0,0) 100%);
+  //background-image: linear-gradient(to left, rgba(0,0,0,.075) 0%, rgba(0,0,0,0) 5%, rgba(0,0,0,0) 100%);
+  width: 200px;
+
+  .wp-responsive-open & {
+    width: 200px;
+  }
+}
+// Override WP 4.1 sticky admin menu
+#adminmenuwrap {
+  bottom: auto !important;
+  position: relative !important;
+  top: 0 !important;
+
+  .sticky-menu & {
+    position: fixed !important;
+  }
+
+  .wp-responsive-open & {
+    position: absolute !important;
+  }
+}
+#adminmenuwrap,
+#adminmenu {
+  background: transparent;
+  width: 200px;
+  z-index: 9999;
+
+  .wp-responsive-open & {
+    width: 200px;
+  }
+}
+#collapse-button{
+  color: white;
+}
+#adminmenu {
+  margin: 12px 0 0 0;
+
+  .folded & {
+    margin: 0;
+  }
+  .auto-fold & {
+    @media only screen and (max-width: 960px) {
+      margin: 0;
+    }
+    @media only screen and (max-width: 782px) {
+      margin: 12px 0 0 0;
+      top: 0;
+
+      &.adminLogoPresent {
+        padding-top: 0;
+        position: relative;
+      }
+    }
+  }
+
+  .menu-icon-dashboard {
+    // min-height: 27px;
+
+    .folded & a.menu-top.menu-top-first {
+      height: 35px;
+      margin: 0 0 -8px 0;
+    }
+
+    .auto-fold & a.menu-top.menu-top-first {
+      @media only screen and (max-width: 960px) {
+        height: 35px;
+        margin: 0 0 -8px 0;
+      }
+      @media only screen and (max-width: 782px) {
+        height: auto;
+        margin: 0;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 960px) {
+  #adminmenuback {
+    background-image: -moz-linear-gradient(right, rgba(0,0,0,.075) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 100%);
+    background-image: -o-linear-gradient(right, rgba(0,0,0,.075) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 100%);
+    background-image: -webkit-linear-gradient(right, rgba(0,0,0,.075) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 100%);
+    background-image: linear-gradient(to left, rgba(0,0,0,.075) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 100%);
+  }
+  #adminmenuwrap,
+  #adminmenu {
+    background: transparent;
+  }
+}
+@media screen and (max-width: 782px) {
+  #adminmenuback {
+    background-image: -moz-linear-gradient(right, rgba(0,0,0,.075) 0%, rgba(0,0,0,0) 5%, rgba(0,0,0,0) 100%);
+    background-image: -o-linear-gradient(right, rgba(0,0,0,.075) 0%, rgba(0,0,0,0) 5%, rgba(0,0,0,0) 100%);
+    background-image: -webkit-linear-gradient(right, rgba(0,0,0,.075) 0%, rgba(0,0,0,0) 5%, rgba(0,0,0,0) 100%);
+    background-image: linear-gradient(to left, rgba(0,0,0,.075) 0%, rgba(0,0,0,0) 5%, rgba(0,0,0,0) 100%);
+  }
+  #adminmenu {
+    padding-top: 46px;
+  }
+}
+#adminmenu .wp-submenu {
+  border-radius: 0 2px 2px 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 0 0 12px 0;
+  width: 200px;
+  z-index: 9999;
+
+  @media only screen and (max-width: 782px) {
+    .wp-responsive-open & {
+      background: none;
+    }
+  }
+}
+#adminmenu .opensub .wp-submenu {
+  padding: 8px 0;
+}
+#adminmenu .wp-submenu a {
+  font-size: 14px;
+}
+// Fix for the 'opensub' class being applied to already open sub menu on click.
+#adminmenu .wp-has-current-submenu.opensub.wp-menu-open .wp-submenu,
+#adminmenu .wp-menu-open.opensub .wp-submenu,
+#adminmenu a.wp-has-current-submenu.wp-menu-open:focus+.wp-submenu,
+.no-js li.wp-has-current-submenu.wp-menu-open:hover .wp-submenu {
+  background: none;
+  padding: 0 0 12px 0;
+}
+.folded.sticky-menu #adminmenu .wp-has-current-submenu.opensub.wp-menu-open .wp-submenu {
+  padding: 7px 0 8px;
+}
+@media only screen and (max-width: 960px) {
+  .sticky-menu #adminmenu .wp-has-current-submenu.opensub.wp-menu-open .wp-submenu,
+  .sticky-menu #adminmenu .wp-menu-open.opensub .wp-submenu,
+  .sticky-menu #adminmenu a.wp-has-current-submenu.wp-menu-open:focus+.wp-submenu,
+  .sticky-menu .no-js li.wp-has-current-submenu.wp-menu-open:hover .wp-submenu {
+    background: #ea5340;
+    padding: 7px 0 8px;
+  }
+}
+@media only screen and (max-width: 782px) {
+  .sticky-menu #adminmenu .wp-has-current-submenu.opensub.wp-menu-open .wp-submenu,
+  .sticky-menu #adminmenu .wp-menu-open.opensub .wp-submenu,
+  .sticky-menu #adminmenu a.wp-has-current-submenu.wp-menu-open:focus+.wp-submenu,
+  .sticky-menu .no-js li.wp-has-current-submenu.wp-menu-open:hover .wp-submenu,
+  .auto-fold #adminmenu .wp-has-current-submenu .wp-submenu {
+    background: none !important;
+    padding: 0 0 12px 0;
+  }
+}
+
+// Top Level Menu Color
+#adminmenu a,
+#adminmenu div.wp-menu-image:before {
+  color: white;
+}
+// Top Level Menu Hover
+#adminmenu .wp-submenu a:focus,
+#adminmenu .wp-submenu a:hover,
+#adminmenu a:hover,
+#adminmenu li.menu-top>a:focus,
+#adminmenu li:hover div.wp-menu-image:before,
+#adminmenu li.opensub a {
+  color: white;
+}
+// Selected Top Level Menu Color
+#adminmenu li.current a.menu-top,
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
+#adminmenu .current div.wp-menu-image:before,
+#adminmenu .wp-has-current-submenu div.wp-menu-image:before,
+#adminmenu a.current:hover div.wp-menu-image:before,
+#adminmenu a.wp-has-current-submenu:hover div.wp-menu-image:before,
+#adminmenu li.wp-has-current-submenu:hover div.wp-menu-image:before {
+  color: white;
+  text-decoration: revert;
+}
+#adminmenu li.current a.menu-top,
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu {
+  background: none;
+  font-weight: bold;
+}
+#adminmenu .wp-has-current-submenu .wp-submenu {
+  background: none;
+}
+// Folded Top Menu and Submenu Background Color
+.folded #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu {
+  background: #ea5340;
+}
+.auto-fold #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
+#adminmenu .wp-has-current-submenu.opensub .wp-submenu {
+  @media only screen and (max-width: 960px) {
+    background: #ea5340;
+  }
+}
+.auto-fold .wp-responsive-open #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
+#adminmenu .wp-responsive-open .wp-has-current-submenu.opensub .wp-submenu {
+  @media only screen and (max-width: 782px) {
+    background: none;
+  }
+}
+// Folded Top Menu Icon Color
+.folded #adminmenu .current div.wp-menu-image:before,
+.folded #adminmenu .wp-has-current-submenu div.wp-menu-image:before,
+.folded #adminmenu a.current:hover div.wp-menu-image:before,
+.folded #adminmenu a.wp-has-current-submenu:hover div.wp-menu-image:before,
+.folded #adminmenu li.wp-has-current-submenu:hover div.wp-menu-image:before {
+  color: #fff;
+}
+@media only screen and (max-width: 960px) {
+  .auto-fold #adminmenu .current div.wp-menu-image:before,
+  .auto-fold #adminmenu .wp-has-current-submenu div.wp-menu-image:before,
+  .auto-fold #adminmenu a.current:hover div.wp-menu-image:before,
+  .auto-fold #adminmenu a.wp-has-current-submenu:hover div.wp-menu-image:before,
+  .auto-fold #adminmenu li.wp-has-current-submenu:hover div.wp-menu-image:before {
+    color: #fff;
+  }
+}
+@media only screen and (max-width: 782px) {
+  .auto-fold #adminmenu .current div.wp-menu-image:before,
+  .auto-fold #adminmenu .wp-has-current-submenu div.wp-menu-image:before,
+  .auto-fold #adminmenu a.current:hover div.wp-menu-image:before,
+  .auto-fold #adminmenu a.wp-has-current-submenu:hover div.wp-menu-image:before,
+  .auto-fold #adminmenu li.wp-has-current-submenu:hover div.wp-menu-image:before {
+    color: #d54e21;
+  }
+}
+// Open Submenu Color
+#adminmenu .wp-submenu a,
+#adminmenu .wp-has-current-submenu .wp-submenu a,
+#adminmenu .wp-has-current-submenu.opensub .wp-submenu a {
+  color: white;
+  font-weight: 400;
+}
+// Open Submenu Hover Color
+#adminmenu .wp-has-current-submenu .wp-submenu a:hover,
+#adminmenu .wp-has-current-submenu.opensub .wp-submenu a:hover {
+  color: #fff;
+}
+// Open Selected Submenu Color
+#adminmenu .opensub .wp-submenu li.current a,
+#adminmenu .wp-submenu li.current,
+#adminmenu .wp-submenu li.current a,
+#adminmenu .wp-submenu li.current a:focus,
+#adminmenu .wp-submenu li.current a:hover,
+#adminmenu a.wp-has-current-submenu:focus+.wp-submenu li.current a {
+  color: #fff;
+}
+#adminmenu li a:focus div.wp-menu-image:before, #adminmenu li.opensub div.wp-menu-image:before, #adminmenu li:hover div.wp-menu-image:before{
+  color: white;
+}
+// Floating Submenu Background
+#adminmenu .wp-submenu {
+  background: $--wer-main-color;
+}
+// Floating Submenu Text Color
+#adminmenu .opensub .wp-submenu a {
+  color: #fff;
+}
+// Floating Submenu Text Hover Color
+#adminmenu .opensub .wp-submenu a:hover {
+  color: white;
+}
+// Folded Selected Floating Unselected Submenu Color
+.folded #adminmenu .wp-has-current-submenu a {
+  color: #ffd8d3;
+}
+.folded.sticky-menu #adminmenu .wp-has-current-submenu.opensub .wp-submenu a:hover {
+  color: #ffd8d3;
+}
+.sticky-menu #adminmenu .wp-has-current-submenu.opensub .wp-submenu a:hover {
+  @media only screen and (max-width: 960px) {
+    color: #ffd8d3;
+  }
+}
+.folded.sticky-menu #adminmenu .wp-has-current-submenu.opensub .wp-submenu a {
+  color: #fff;
+}
+.sticky-menu #adminmenu .wp-has-current-submenu.opensub .wp-submenu a {
+  @media only screen and (max-width: 960px) {
+    color: #fff;
+  }
+}
+/* Folded Selected Floating Selected Submenu Color */
+.folded #adminmenu .wp-submenu li.current,
+.folded #adminmenu .wp-submenu li.current a,
+.folded #adminmenu .opensub .wp-submenu li.current,
+.folded #adminmenu .opensub .wp-submenu li.current a,
+.folded #adminmenu .opensub .wp-submenu li.current a:focus,
+.folded #adminmenu .opensub .wp-submenu li.current a:hover {
+  color: #fff;
+}
+@media only screen and (max-width: 960px) {
+  #adminmenu .wp-submenu li.current a,
+  #adminmenu .opensub .wp-submenu li.current,
+  #adminmenu .opensub .wp-submenu li.current a,
+  #adminmenu .opensub .wp-submenu li.current a:focus,
+  #adminmenu .opensub .wp-submenu li.current a:hover {
+    color: #fff;
+  }
+  .sticky-menu #adminmenu .wp-submenu li.current a
+  .sticky-menu #adminmenu .opensub .wp-submenu li.current,
+  .sticky-menu #adminmenu .opensub .wp-submenu li.current a,
+  .sticky-menu #adminmenu .opensub .wp-submenu li.current a:focus,
+  .sticky-menu #adminmenu .opensub .wp-submenu li.current a:hover {
+    color: #fff;
+  }
+}
+// Folded Floating Submenu Background and Color
+.folded #adminmenu .wp-has-current-submenu.opensub .wp-submenu,
+.folded #adminmenu a.wp-has-current-submenu.opensub:focus+.wp-submenu,
+.folded #adminmenu .wp-has-current-submenu.opensub .wp-submenu .wp-submenu-head,
+.folded #adminmenu .wp-menu-arrow,
+.folded #adminmenu .wp-menu-arrow div,
+.folded #adminmenu li.current a.menu-top,
+.folded #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
+.folded #adminmenu li.current.menu-top,
+.folded #adminmenu li.wp-has-current-submenu {
+  background: #ea5340;
+  color: #fff;
+  font-size: 16px;
+}
+.folded #adminmenu .wp-has-current-submenu.opensub .wp-submenu,
+.folded #adminmenu a.wp-has-current-submenu.opensub:focus+.wp-submenu {
+  border-radius: 0 2px 2px 0;
+  padding: 7px 0 8px;
+}
+// Folded Floating Top Level Menu Background and Color
+#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head,
+#adminmenu .wp-menu-arrow,
+#adminmenu .wp-menu-arrow div,
+#adminmenu li.current a.menu-top,
+.wp-responsive-open #adminmenu li.current a.menu-top,
+.folded #adminmenu .wp-has-current-submenu .wp-submenu,
+.folded #adminmenu a.wp-has-current-submenu:focus+.wp-submenu,
+.folded #adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head,
+.folded #adminmenu li.current.menu-top,
+.folded #adminmenu li.wp-has-current-submenu  {
+  @media only screen and (max-width: 960px) {
+    background: #ea5340;
+    color: #fff;
+  }
+  @media only screen and (max-width: 782px) {
+    background: none;
+    color: #ea5340;
+  }
+}
+// Floating Top Level Folded Menu Bolded
+#adminmenu .wp-has-current-submenu.opensub .wp-submenu .wp-submenu-head,
+#adminmenu .wp-submenu .wp-submenu-head,
+.folded #adminmenu .wp-submenu .wp-submenu-head,
+.folded #adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head {
+  color: #fff;
+  // font-weight: 600;
+  font-size: 16px;
+}
+// Submenu Arrow Color
+#adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after {
+  border-right-color: #2ea2cc;
+}
+ul#adminmenu a.wp-has-current-submenu:after,
+ul#adminmenu>li.current>a.current:after {
+  border-right-color: #fff;
+}
+#adminmenu li.menu-top:hover,
+#adminmenu li.menu-top:hover a,
+#adminmenu li.opensub>a.menu-top,
+#adminmenu li>a.menu-top:focus {
+  background: none;
+}
+// Update Notices
+#adminmenu .awaiting-mod,
+#adminmenu .update-plugins,
+#sidemenu li a span.update-plugins {
+  background-color: #d54e21;
+  color: #fff;
+}
+#adminmenu div.wp-menu-image {
+  float: right;
+  margin: 0 11px;
+}
+.folded #adminmenu div.wp-menu-image {
+  float: none;
+  margin: 0;
+}
+.auto-fold #adminmenu div.wp-menu-image {
+  @media only screen and (max-width: 960px) {
+    float: none;
+    margin: 0;
+  }
+  @media screen and (max-width: 782px) {
+    float: right;
+    margin: 0 11px;
+    position: relative;
+  }
+}
+.auto-fold #adminmenu a.menu-top {
+  @media screen and (max-width: 782px) {
+    height: auto;
+    padding: 0;
+  }
+}
+#adminmenu div.wp-menu-name {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px 20px;
+
+  .auto-fold & {
+    @media screen and (max-width: 782px) {
+      font-size: 16px;
+      margin-left: 0;
+      padding: 8px 20px;
+    }
+  }
+}
+
+#adminmenu .wp-has-current-submenu ul > li > a,
+.folded #adminmenu li.menu-top .wp-submenu > li > a {
+  font-size: 14px;
+  padding: 4px 21px;
+}
+@media only screen and (max-width: 960px) {
+  .folded #adminmenu li.menu-top .wp-submenu > li > a,
+  .auto-fold #adminmenu li.menu-top .wp-submenu > li > a,
+  #adminmenu li.menu-top .wp-submenu > li > a {
+    font-size: 14px;
+    padding: 4px 21px;
+  }
+}
+#adminmenu .wp-submenu {
+  left: 200px;
+}
+#adminmenu li.wp-menu-separator {
+  border-top: 1px solid white;
+  height: 1px;
+  margin: 14px auto 15px auto;
+
+  .folded & {
+    margin: 8px auto 9px auto;
+  }
+  @media only screen and (max-width: 960px) {
+    .auto-fold & {
+      margin: 8px auto 9px auto;
+    }
+  }
+}
+#adminmenu #collapse-menu {
+  border-top: 1px solid white;
+  margin: 14px auto 15px auto;
+  padding: 12px 20px 12px 9px;
+  transition-property: color;
+}
+.folded #adminmenu #collapse-menu {
+  padding: 12px 20px 12px 0;
+}
+@media only screen and (max-width: 960px) {
+  .auto-fold #adminmenu #collapse-menu {
+    padding: 12px 20px 12px 0;
+  }
+}

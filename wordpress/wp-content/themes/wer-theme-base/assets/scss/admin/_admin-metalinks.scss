@@ -1,0 +1,42 @@
+/* *********************** */
+/* Meta Links */
+/* *********************** */
+#screen-meta {
+  margin: 0 0 -1px 0;
+}
+#screen-meta-links {
+  margin: 0 60px 0 0;
+}
+.post-php #screen-meta-links,
+.post-new-php #screen-meta-links,
+.comment-php #screen-meta-links {
+  margin: 0 0 0 0;
+}
+#contextual-help-link-wrap,
+#screen-options-link-wrap {
+  background: #eeecec;
+  -webkit-box-shadow: none;
+  border: 0 none;
+  border-radius: 0 0 2px 2px;
+  box-shadow: none;
+  height: 28px;
+  margin: 0 0 0 6px;
+  padding: 0;
+
+  a.show-settings {
+    background: #eeecec !important;
+    padding: 6px 6px 6px 16px;
+  }
+
+}
+#contextual-help-wrap,
+#screen-options-wrap {
+  margin: 0;
+  position: relative;
+}
+.comment-php #poststuff h3 {
+  padding: 15px 0 0 0;
+}
+.form-table.editcomment td {
+  padding: 15px 10px 15px 0;
+}

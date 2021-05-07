@@ -1,0 +1,131 @@
+@import "../../variables";
+
+#wpcontent {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.folded #wpbody{
+  margin: 0 calc(100vw / 12);
+  padding-top: $--header-size-short !important;
+}
+
+#widgets{
+  margin-top: 100px;
+}
+
+body{
+  //background: $--wer-main-color !important;
+  //background-image: url("https://www.wermedia.nl/wp-content/themes/wermedia2020/img/wer-bg2.svg") !important;
+  //background-position: center;
+  //background-repeat: no-repeat;
+  //background-size: cover;
+}
+
+[data-tooltip]{
+  width: 100% !important;
+}
+
+#wpadminbar, #wpfooter {
+  left: 0;
+  margin: 0 !important;
+  //box-shadow: $--material-shadow-2;
+}
+
+#adminmenumain{
+  display: none;
+}
+
+.vertical-widgets{
+  display: none;
+}
+
+#overlay-page {
+  position: fixed;
+  background: $--wer-main-color !important;
+  z-index: 10000;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  overflow-y: hidden;
+
+  // Overlay is navigating (Outside Dashboard)
+  &.short{
+    transition: all 1s ease-in-out;
+    height: $--header-size-short;
+    overflow-y: auto;
+    box-shadow: $--material-shadow-1;
+
+    #wer-dashboard-widgets{
+      margin-top: -34px;
+
+      .card{
+        min-height: 69px;
+        padding: 12px;
+        min-width: 85%;
+        width: 20px;
+
+        .bi{
+          font-size: 31px;
+        }
+      }
+    }
+
+    .vertical-widgets{
+      display: flex;
+    }
+
+    img.wer-image-dashboard {
+      width: 8rem !important;
+      margin-top: 33px !important;
+    }
+
+    section#widgets{
+      display: none !important;
+    }
+  }
+
+  #wer-dashboard-widgets {
+    margin: auto;
+
+    img.wer-image-dashboard {
+      width: 200px;
+      margin-top: -35px;
+
+      border-bottom: 5px solid $--wer-main-secondary-color;
+      border-left: 5px solid $--wer-main-secondary-color;
+      border-radius: 100%;
+      background: $--wer-secondary-color;
+    }
+
+    .card {
+      color: black !important;
+      min-height: 180px;
+      padding: 20px;
+
+      border-bottom: 5px solid $--wer-main-secondary-color;
+      border-left: 5px solid $--wer-main-secondary-color;
+      border-radius: 10px;
+      max-width: 100%;
+      cursor: pointer;
+
+      &:hover {
+        border-bottom: 5px solid $--wer-main-color;
+        border-left: 5px solid $--wer-main-color;
+        transition: all .6s ease-in-out;
+      }
+
+      .bi {
+        font-size: 50px;
+      }
+
+      .card-title {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 13px;
+        padding-top: 16px;
+      }
+    }
+  }
+}

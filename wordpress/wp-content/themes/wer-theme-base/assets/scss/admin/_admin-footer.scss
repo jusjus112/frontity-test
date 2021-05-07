@@ -1,0 +1,22 @@
+@import "../variables";
+/* *********************** */
+/* Footer */
+/* *********************** */
+#wpfooter {
+  background: $--wer-main-color;
+  color: white;
+  margin-left: 200px;
+
+  #footer-left{
+    display: none;
+  }
+
+  a{
+    color: #999;
+    text-decoration: underline;
+
+    &:hover{
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+/* *********************** */
+/* Editor */
+/* *********************** */
+#wp-content-editor-tools,
+.wp-editor-expand #wp-content-editor-tools {
+  background: #fff;
+  border-bottom: 1px solid #dad9d9;
+}
+.wp-editor-container {
+  border-color: #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.wp-switch-editor {
+  border: 0 none !important;
+}
+#wp-content-media-buttons {
+  padding-bottom: 6px;
+}
+div.mce-toolbar-grp {
+  background: #fff !important;
+  border-bottom: 0 none !important;
+}
+div.mce-toolbar-grp > .mce-container-body {
+  padding: 4px 0 8px 0;
+}
+.mce-toolbar .mce-btn-group .mce-btn.mce-first {
+  margin-left: 0 !important;
+}
+.wp-switch-editor {
+  background: #f3f3f3 !important;
+  border-radius: 2px 2px 0 0;
+  padding: 7px 8px !important;
+}
+.html-active .switch-html,
+.tmce-active .switch-tmce {
+  background: #dad9d9 !important;
+}

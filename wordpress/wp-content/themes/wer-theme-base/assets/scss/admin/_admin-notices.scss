@@ -1,0 +1,14 @@
+/* *********************** */
+/* Notices */
+/* *********************** */
+.media-upload-form div.error,
+.wrap div.error,
+.wrap div.updated {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin: 42px 0 12px 0;
+}
+div.error,
+div.updated {
+  background: #ebf7e3;
+}

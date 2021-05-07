@@ -1,0 +1,86 @@
+@import "../variables";
+
+/* *********************** */
+/* Posts Page */
+/* *********************** */
+.subsubsub {
+  margin: 4px 0 12px 0;
+}
+.subsubsub li {
+  color: #fff;
+}
+
+.post-state {
+  background: #999999;
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+  margin: -1px 10px 5px 0;
+  padding: 1px 5px;
+  vertical-align: top;
+}
+.admin-color-fresh .post-state {
+  background: #ff7600;
+  padding: 2px 17px;
+  border-radius: 5px;
+}
+.admin-color-light .post-state {
+  background: #888888;
+}
+.admin-color-blue .post-state {
+  background: #4796b3;
+}
+.admin-color-coffee .post-state {
+  background: #59524c;
+}
+.admin-color-ectoplasm .post-state {
+  background: #523f6d;
+}
+.admin-color-midnight .post-state {
+  background: #363b3f;
+}
+.admin-color-ocean .post-state {
+  background: #627c83;
+}
+.admin-color-sunrise .post-state {
+  background: #cf4944;
+}
+.widefat td,
+.widefat th {
+  /*color: #fff;*/
+  padding: 12px 10px;
+}
+
+// Hide the hyphen between title and status
+td.post-title strong,
+td.page-title strong {
+  display: inline;
+}
+.row-actions {
+  padding: 4px 0 0 0;
+}
+.widefat tbody th.check-column,
+.widefat tfoot th.check-column,
+.widefat thead th.check-column {
+  padding: 14px 0 0 3px;
+}
+.wp-list-table tr th,
+table.comments tr th {
+  border-radius: 0;
+}
+.wp-list-table tr td:last-child,
+table.comments tr td:last-child {
+  border-radius: 0 3px 3px 0;
+}
+.wp-list-table tr:hover,
+table.comments tr:hover {
+  background: #eeecec;
+}
+table.comments .alt,
+table.comments .alternate,
+.wp-list-table .alt,
+.wp-list-table .alternate {
+  background: #fff;
+}
