@@ -2,18 +2,18 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "fd3e1e6e6ea1fd2b0aea",
+  "hash": "e189520396a042959229",
   "publicPath": "/static/",
   "outputPath": "C:\\xampp\\htdocs\\frontity-test\\wermedia\\build\\static",
   "assetsByChunkName": {
     "wermedia": [
       "wermedia.module.js",
-      "wermedia.47c8b68493250c05a6b0.hot-update.js"
+      "wermedia.dcac4282c2a7b32ab9d6.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "47c8b68493250c05a6b0.hot-update.json",
+      "name": "dcac4282c2a7b32ab9d6.hot-update.json",
       "size": 50,
       "chunks": [],
       "chunkNames": [],
@@ -24,8 +24,8 @@
       "emitted": false
     },
     {
-      "name": "wermedia.47c8b68493250c05a6b0.hot-update.js",
-      "size": 24829,
+      "name": "wermedia.dcac4282c2a7b32ab9d6.hot-update.js",
+      "size": 38172,
       "chunks": [
         "wermedia"
       ],
@@ -40,7 +40,7 @@
     },
     {
       "name": "wermedia.module.js",
-      "size": 6285028,
+      "size": 6298895,
       "chunks": [
         "wermedia"
       ],
@@ -59,7 +59,7 @@
       ],
       "assets": [
         "wermedia.module.js",
-        "wermedia.47c8b68493250c05a6b0.hot-update.js"
+        "wermedia.dcac4282c2a7b32ab9d6.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -72,7 +72,7 @@
       ],
       "assets": [
         "wermedia.module.js",
-        "wermedia.47c8b68493250c05a6b0.hot-update.js"
+        "wermedia.dcac4282c2a7b32ab9d6.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -84,15 +84,15 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 1564541,
+      "size": 1573838,
       "names": [
         "wermedia"
       ],
       "files": [
         "wermedia.module.js",
-        "wermedia.47c8b68493250c05a6b0.hot-update.js"
+        "wermedia.dcac4282c2a7b32ab9d6.hot-update.js"
       ],
-      "hash": "e0cff520f60b17904a4e",
+      "hash": "4d3858a687027da73b68",
       "siblings": [],
       "parents": [],
       "children": [],

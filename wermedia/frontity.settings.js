@@ -2,7 +2,7 @@ const settings = {
   name: "wermedia",
   state: {
     "frontity": {
-      "url": "https://www.fotopottjewijd.com",
+      "url": "http://local-react.com",
       "title": "Test Frontity Blog",
       "description": "WordPress installation for Frontity development"
     }
@@ -15,7 +15,14 @@ const settings = {
       name: "@frontity/wp-source",
       state: {
         source: {
-          url: "https://www.fotopottjewijd.com"
+          url: "http://local-react.com",
+          postTypes: [
+            {
+              type: "products",
+              endpoint: "products",
+              archive: "/products"
+            }
+          ]
         }
       }
     },
